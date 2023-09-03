@@ -1,0 +1,15 @@
+<web-app>
+<servlet>  <!--declares a servlet named "calculator" and associates it with a JSP file named "calculator.jsp" -->
+    <servlet-name>calculator</servlet-name>  <!--specifies the name of the servlet-->
+    <jsp-file>/calculator.jsp</jsp-file>     <!--specifies the location of the JSP file -->
+</servlet>
+
+<servlet-mapping>  <!-- maps the servlet to a URL pattern "/calculator" -->
+    <servlet-name>calculator</servlet-name>
+    <url-pattern>/calculator</url-pattern> 
+</servlet-mapping>
+
+<welcome-file-list>  <!--specifies a list of default files to be used as the welcome file when a client sends a request to the root URL of the web application -->
+  <welcome-file>/calculator.html</welcome-file>
+</welcome-file-list>
+</web-app>
